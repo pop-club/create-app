@@ -1,4 +1,4 @@
-import React, { Component, render } from 'react'
+import React, { Component } from 'react'
 import styles from './Container.module.scss'
 import Menu from '@/components/Menu/Menu'
 import logo from '@/assets/logo.png'

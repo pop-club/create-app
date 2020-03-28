@@ -1,7 +1,9 @@
+$height: 70px;
+
 .Container{
   .header{
-    height: 100px;
-    line-height: 100px;
+    height: $height;
+    line-height: $height;
     display: flex;
     background: #fff;
     .logo{
@@ -15,7 +17,7 @@
   .main{
     display: flex;
     position: absolute;
-    padding-top: 100px;
+    padding-top: $height;
     width: 100%;
     height: 100%;
     top: 0;

@@ -10,16 +10,16 @@ export default class Routes extends Component {
   render() {
     return (
       <Router>
-        <Route path="/">
+        <Route exact path="/">
           <Container><Home></Home></Container>
         </Route>
-        <Route path="/statistics">
+        <Route exact path="/statistics">
           <Container><Statistics></Statistics></Container>
         </Route>
-        <Route path="/account">
+        <Route exact path="/account">
           <Container><Account></Account></Container>
         </Route>
-        <Route path="/login" component={Login}></Route>
+        <Route exact path="/login" component={Login}></Route>
       </Router>
     )
   }

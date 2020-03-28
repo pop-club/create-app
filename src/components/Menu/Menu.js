@@ -1,16 +1,33 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import styles from './Menu.module.scss'
+import { routes } from '@/router'
 
-export default class Nav extends Component {
+class Menu extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      path: window.location.pathname
+    }
+  }
+
+  link = (item) => {
+    this.props.history.push(item.path)
+  }
+
   render() {
     return (
       <div className={styles.menu}>
         <ul>
-          <li className={styles.on}>首页</li>
-          <li>数据统计</li>
-          <li>账号管理</li>
+          {
+            routes.map(item => {
+              return <li key={item.name} onClick={() => this.link(item)} className={item.path === this.state.path ? styles.on : ''}>{item.name}</li>
+            })
+          }
         </ul>
       </div>
     )
   }
 }
+
+export default withRouter(Menu)

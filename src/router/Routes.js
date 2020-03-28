@@ -11,13 +11,13 @@ export default class Routes extends Component {
     return (
       <Router>
         <Route exact path="/">
-          <Container><Home></Home></Container>
+          <Container children={<Home/>}/>
         </Route>
         <Route exact path="/statistics">
-          <Container><Statistics></Statistics></Container>
+          <Container children={<Statistics/>}/>
         </Route>
         <Route exact path="/account">
-          <Container><Account></Account></Container>
+        <Container children={<Account/>}/>
         </Route>
         <Route exact path="/login" component={Login}></Route>
       </Router>

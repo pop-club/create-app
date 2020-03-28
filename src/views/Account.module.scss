@@ -1,0 +1,18 @@
+.account{
+  .search{
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    .row{
+      display: inline-block;
+      margin-right: 20px;
+      .ant-btn{
+        margin-left: 8px;
+      }
+      label{
+        text-align: right;
+        display: inline-block;
+        color: #343434;
+      }
+    }
+  }
+}

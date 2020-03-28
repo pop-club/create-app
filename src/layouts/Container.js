@@ -16,7 +16,7 @@ export default class Container extends Component {
         </div>
         <div className={styles.main}>
           <div className={styles.menu}>
-            <Menu></Menu>
+            <Menu/>
           </div>
           <div className={styles.content}>
             {this.props.children}

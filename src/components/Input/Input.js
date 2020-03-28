@@ -10,9 +10,12 @@ export default class Input extends Component {
   }
 
   change = (e) => {
+    const value = e.target.value
+    const index = this.props.index
     this.setState({
-      value: e.target.value
+      value
     })
+    this.props.emit(value, index)
   }
 
   render() {

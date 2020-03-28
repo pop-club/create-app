@@ -3,6 +3,7 @@ import styles from './Account.module.scss'
 import Input from '@/components/Input/Input'
 import { Button } from 'antd'
 import List from './Com/List'
+import store from '@/redux'
 
 export default class Account extends Component {
   constructor (props) {
@@ -24,10 +25,11 @@ export default class Account extends Component {
 
   log = () => {
     console.log(this.state.form)
+    store.dispatch({ type: 'login' })
   }
 
-  add = () => {
-    
+  reset = () => {
+    console.log(store.getState())
   }
 
   render() {
@@ -44,7 +46,7 @@ export default class Account extends Component {
           </div>
           <div className={styles.row}>
             <Button onClick={this.log} type="primary" className={styles['ant-btn']}>查询</Button>
-            <Button onClick={this.add} className={styles['ant-btn']}>重置</Button>
+            <Button onClick={this.reset} className={styles['ant-btn']}>重置</Button>
           </div>
         </div>
         <div className={styles.content}>

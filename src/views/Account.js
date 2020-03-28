@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styles from './Account.module.scss'
 import Input from '@/components/Input/Input'
 import { Button } from 'antd'
-import Info from './Info'
+import List from './Com/List'
 
 export default class Account extends Component {
   constructor (props) {
@@ -49,7 +49,7 @@ export default class Account extends Component {
         </div>
         <div className={styles.content}>
           <div className={styles.table}>
-            <Info></Info>
+            <List></List>
           </div>
         </div>
       </div>

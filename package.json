@@ -139,6 +139,8 @@
     ]
   },
   "devDependencies": {
+    "@antv/g2": "^4.0.3",
+    "lodash": "^4.17.15",
     "node-sass": "^4.13.1"
   }
 }

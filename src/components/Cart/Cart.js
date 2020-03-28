@@ -5,8 +5,10 @@ export default class Cart extends Component {
   render() {
     return (
       <div className={styles.cart}>
-        <div className={styles.title}>卡片标题</div>
-        <div className={styles.content}>卡片内容</div>
+        {this.props.title ? <div className={styles.title}>{this.props.title}</div> : null}
+        <div className={styles.content}>
+          {this.props.children}
+        </div>
       </div>
     )
   }

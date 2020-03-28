@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Table } from 'antd'
 
-export default class Info extends Component {
+export default class List extends Component {
   constructor (props) {
     super(props)
     this.state = {

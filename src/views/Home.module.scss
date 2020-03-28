@@ -1,0 +1,25 @@
+.home{
+  .card{
+    color: #fff;
+    padding: 20px;
+    h2{
+      font-weight: normal;
+      color: #fff;
+    }
+    p{
+      font-size: 24px;
+    }
+    &.primary{
+      background: #1890ff;
+    }
+    &.success{
+      background: #19be6b;
+    }
+    &.warning{
+      background: #f90;
+    }
+    &.error{
+      background: #ed4014;
+    }
+  }
+}

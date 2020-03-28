@@ -10,13 +10,13 @@ export default class Statistics extends Component {
     return (
       <div>
         <div style={style}></div>
-        <Row>
-          <Col span={10} offset={1}>
+        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+          <Col span={12}>
             <Cart title="气温统计">
               <Line></Line>
             </Cart>
           </Col>
-          <Col span={10} offset={2}>
+          <Col span={12}>
             <Cart title="年利润">
               <Bar></Bar>
             </Cart>

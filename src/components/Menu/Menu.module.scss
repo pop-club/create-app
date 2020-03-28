@@ -1,0 +1,21 @@
+.menu{
+  width: 100%;
+  ul{
+    li{
+      height: 48px;
+      line-height: 48px;
+      padding: 0 28px;
+      color: #343434;
+      cursor: pointer;
+      &:hover{
+        background: #f0faff;
+        color: #1890ff;
+      }
+      &.on{
+        color: #fff;
+        background: #1890ff;
+        cursor: default;
+      }
+    }
+  }
+}

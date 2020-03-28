@@ -1,0 +1,19 @@
+.cart{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+  &.full{
+    width: 100%;
+  }
+  .title{
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 10px;
+  }
+  .content{
+    padding: 20px 10px;
+  }
+}

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, render } from 'react'
 import styles from './Container.module.scss'
 import Menu from '@/components/Menu/Menu'
 import logo from '@/assets/logo.png'
@@ -9,7 +9,7 @@ export default class Container extends Component {
       <div className={styles.Container}>
         <div className={styles.header}>
           <div className={'flex-box ' + styles.logo}>
-            <img src={logo}/>
+            <img src={logo} alt=""/>
           </div>
           <div className={styles.title}></div>
           <div className={styles.info}></div>
